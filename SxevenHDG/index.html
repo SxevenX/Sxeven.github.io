@@ -4,26 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="startseite.css" />
-    <title>Gegessene Lounge</title>
+    <title>SXEVEN SCIAL MEDIA</title>
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#">HABDICHGEGESSEN | SXEVEN</a></div>
+            <div class="logo"><a href="#">GEGESSENE LOUNGE</a></div>
         <ul class="links">
             <li><a href="Home">Home</a></li>
             <li><a href="News">News</a></li>
             <li><a href="https://discord.gg/3UN2cfsqjT" target:="_blank">Discord</a></li>
             <li><a href="Kontankt">Kontakt</a></li>
         </ul>
-        <a href="#" class="action_btn">Get started</a>     
-        <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
-        </div>
         </div>
     </header>
     <br>
-    <h1>GEGESSENE LOUNGE</h1>
+    <h1>SXEVEN</h1>
     <br>
     <br>
     <br>
@@ -47,7 +70,7 @@
     <div>
         <table class="pagetabelle">
             <tr>
-                <th><div class="page"></div></th>
+                <th><div class="page"><div id="columnchart_material" style="width: 800px; height: 500px;"></div></div></th>
                 <th><div class="page"></div></th>
                 <th><div class="page"></div></th>
             </tr>
