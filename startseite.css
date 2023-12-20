@@ -1,0 +1,162 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url(25db4373-7e5d-4368-8796-7c701be717d0.jpeg);
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+}
+
+a:hover{
+    color: orange;
+    }
+    
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    background-color:goldenrod;
+    scale: 1.05;
+    color: white
+}
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+}
+
+/*Icons*/
+
+.icont{
+    color: purple;
+    font-size: 400%;
+    opacity: 0.7;
+    transition: scale 0.2 ease;
+}
+
+.icont:hover{
+    opacity: 1;
+    scale: 1.3;
+}
+
+.icony{
+    color: red;
+    font-size: 400%;
+    opacity: 0.7;
+}
+
+.icony:hover{
+    opacity: 1;
+    scale: 1.3;
+}
+
+.icond{
+    color:cornflowerblue;
+    font-size: 400%;
+    opacity: 0.7;
+}
+
+.icond:hover{
+    opacity: 1;
+    scale: 1.3;
+}
+
+.icontabelle{
+    margin: auto;
+    width: 30%;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial;
+    font-size: 400%;
+    color: white;
+    font-weight: bold;
+}
+
+.pagetabelle{
+    margin: auto;
+    width: 90%
+}
+
+.page{
+    width: 540px;
+    height: 650px;
+    background-color: black;
+    border-radius: 5%;
+    padding: 20px;
+    margin: 20;
+    opacity: 0.3;
+}
+
+.foot{
+    background-color: black;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    color: gray;
+}
