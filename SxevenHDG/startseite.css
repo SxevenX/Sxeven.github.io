@@ -8,7 +8,7 @@
 
 body{
     height: 100vh;
-    background-color: gray;
+    background-color:lightgray;
 }
 .hgbild{
     width: 100%;
@@ -37,6 +37,7 @@ a:hover{
 header{
     position: relative;
     padding: 0 2rem;
+    background-color:rgba(0,0,0,0.15);
 }
 
 .navbar{
@@ -182,6 +183,7 @@ h1{
     height: 160px;
     border-radius: 50%;
     position: relative;
+    padding: 3%;
 }
 
 .outer{
@@ -197,6 +199,9 @@ h1{
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    border: 1px solid red;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                 inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                 -0.5px -0.5px 0px rgba(255,255,255,1),
+                 0.5px 0.5px 0px rgba(0,0,0,0.15),
+                 0px 12px 10px -10px rgba(0,0,0,0.05);
 }
-
