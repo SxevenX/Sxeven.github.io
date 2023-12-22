@@ -293,3 +293,14 @@ svg{
 .thstats{
     font-size: 150%;
 }
+
+.datum{
+text-align: center;
+color: black;
+font-size: 140%;
+}
+
+.openend{
+    color: magenta;
+    font-weight: bold;
+}
