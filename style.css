@@ -349,7 +349,13 @@ font-size: 140%;
 
 @media (max-width: 700px) {
     .newsbild{
-            width: 80%;
+            width: 65%;
+        }
+    }
+
+@media (max-width: 700px) {
+    .newsbox{
+            display: inline;
         }
     }
 
