@@ -266,13 +266,13 @@ svg{
 
 @keyframes anim1{
     100%{
-        stroke-dashoffset: 150;;
+        stroke-dashoffset: 0;;
     }
 }
 
 @keyframes anim2{
     100%{
-        stroke-dashoffset: 70;;
+        stroke-dashoffset: 0;;
     }
 }
 
