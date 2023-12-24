@@ -50,6 +50,12 @@ header{
     justify-content: space-between;
 }
 
+@media screen and (max-width: 700px) {
+    .navbar {
+        display: none;
+    }
+}
+
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
@@ -355,7 +361,39 @@ font-size: 140%;
 
 @media (max-width: 700px) {
     .newsbox{
-            display: inline;
+            display:grid;
+            width: 90%;
+            align-items: center;
+            position: relative;
+            text-align: center;
+
         }
     }
 
+.newsbghandy{
+    display: none;
+    position: absolute;
+}
+
+@media (max-width: 700px) {
+    .newsbghandy{
+            display:inline;
+        }
+}
+
+@media (max-width: 700px) {
+    .newsbg{
+            display:none;
+        }
+}
+
+.center{
+    margin: auto;
+    width: 90%;
+}
+
+.newsh2{
+    color:magenta;
+    font-size: 110%;
+    font-weight: bold;
+}
