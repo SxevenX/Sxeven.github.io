@@ -343,7 +343,6 @@ font-size: 140%;
 
 @media (max-width: 700px) {
     .news{
-            color: black;
             font-size: 100%;
         }
     }
