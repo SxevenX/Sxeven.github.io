@@ -55,22 +55,37 @@ header{
     font-weight: bold;
 }
 
-@media (max-width: 700px) {
-.navbar{
-        display: none;
-    }
-}
+
 
 .navbar .links {
     display: flex;
     gap: 2rem;
 }
 
-.navbar .toggle_btn{
-    color: white;
-    font-size: 1.5rem;
+.toggle_btn {
+    display: none; /* Initially hide the toggle button */
     cursor: pointer;
-    display: none;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 700px) {
+    .links {
+        display: none; /* Hide the links in smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .links.show {
+        display: flex; /* Show the links when the toggle button is clicked */
+    }
+
+    .toggle_btn {
+        display: block; /* Show the toggle button in smaller screens */
+    }
 }
 
 .action_btn{
@@ -96,10 +111,6 @@ header{
     .navbar .links,
     .navbar .action_btn{
         display: none;
-    }
-
-    .navbar .toggle_btn{
-        display: block;
     }
 }
 
@@ -266,13 +277,13 @@ svg{
 
 @keyframes anim1{
     100%{
-        stroke-dashoffset: 150;;
+        stroke-dashoffset: 0;;
     }
 }
 
 @keyframes anim2{
     100%{
-        stroke-dashoffset: 70;;
+        stroke-dashoffset: 0;;
     }
 }
 
@@ -304,3 +315,42 @@ font-size: 140%;
     color: magenta;
     font-weight: bold;
 }
+
+.newsbild{
+    width: 60%;
+    height: auto;
+}
+
+.newsbox{
+    align-items: center;
+    position: relative;
+    display: flex;
+    text-align: center;
+    padding: 4%;
+    gap: 1%;
+
+}
+
+.news{
+    color: white;
+    font-size: 150%;
+}
+
+.newsbg{
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .news{
+            color: black;
+            font-size: 100%;
+        }
+    }
+
+@media (max-width: 700px) {
+    .newsbild{
+            width: 80%;
+        }
+    }
+
