@@ -293,7 +293,7 @@ svg{
 
 @keyframes anim2{
     100%{
-        stroke-dashoffset: 0;;
+        stroke-dashoffset: 300;;
     }
 }
 
